@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculateBMI(mass, height) {
+            return mass / (height * height);
+        }
+
+        var markMassKg = 78;
+        var johnMassKg = 92;
+        var markHeightM = 1.69;
+        var johnHeightM = 1.95;
+        var markBMI = calculateBMI(markMassKg, markHeightM);
+        var johnBMI = calculateBMI(johnMassKg, johnHeightM);
+        var markMassKg1 = 95;
+        var johnMassKg1 = 85;
+        var markHeightM1 = 1.88;
+        var johnHeightM1 = 1.76;
+        var markBMI1 = calculateBMI(markMassKg1, markHeightM1);
+        var johnBMI1 = calculateBMI(johnMassKg1, johnHeightM1);
+        console.log("mark's BMI = " + markBMI);
+        console.log("john's BMI = " + johnBMI);
+        console.log(Boolean(markBMI < johnBMI));
+        if (Boolean(markBMI < johnBMI)) {
+            console.log("John's BMI is higher than Mark's BMI ");
+
+        } else {
+            console.log("Mark's BMI is higher than John's BMI");
+        }
+        console.log("mark's BMI1 = " + markBMI1);
+        console.log("john's BMI1 = " + johnBMI1);
+        console.log(Boolean(markBMI1 < johnBMI1));
+    </script>
+
+
+</body>
+
+</html>
